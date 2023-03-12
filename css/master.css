@@ -1,0 +1,49 @@
+/* global style */
+* {
+    font-family: 'Poppins', sans-serif;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    transition: 0.3s all;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none !important;
+}
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+:root{
+    --maincolor:#588CD0;
+    --secondarycolor:#fff;
+}
+.navbar-toggler:focus,.form-select:focus{
+    box-shadow: none !important; 
+}
+.navbar-collapse{
+    flex-grow: 0 !important;
+}
+.form-select{
+    width: 120px !important;
+}
+.userIcon i{
+    font-size: 20px;
+} 
+.register .pages p{
+    cursor: pointer;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/hero-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: hsla(0, 0%, 0%, 0.3);
+    background-blend-mode: overlay;
+}
+main .textinfo h2{
+    letter-spacing: 1.2px;
+}
