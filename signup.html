@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-translate="وجهتي">Wejhatee</title>
+    <title>Signin</title>
     <!-- css file -->
     <link rel="stylesheet" href="css/master.css">
     <!-- Render elements normaly -->
@@ -75,7 +76,7 @@
                                             </div>
                                         </div>
                                         <div class="col-auto text-center">
-                                            <button type="submit" class="btn btn-primary mb-3" id="SigninBtn" data-translate="login">Sign in</button>
+                                            <button type="submit" class="btn btn-primary mb-3" id="SigninBtn">Sign in</button>
                                         </div>
                                     </form>
                                 </div>
@@ -90,23 +91,37 @@
             </div>
         </div>
     </nav>
-    <!-- end header -->
-
-    <!-- start main -->
-    <main class="hero d-flex justify-content-center align-items-center">
-        <div class="textinfo text-center">
-            <h2 class="text-white fw-bolder text-center" data-translate="Travel">Travel is to live
-                more than once</h2>
+    <!-- start signup page -->
+    <div class="signupform mt-4">
+        <div class="container-fluid d-flex align-items-center justify-content-center" style="min-height: 100vh">
+            <div class="container col-md-6">
+                <h2 class="text-center mb-4" data-translate="SignUp">Sign Up</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="username" class="form-label" data-translate="Username" data-translate="Username">Username:</label>
+                        <input type="text" class="form-control w-100" id="username" name="username" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label" data-translate="Email">Email:</label>
+                        <input type="email" class="form-control w-100" id="email" name="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label" data-translate="password">Password:</label>
+                        <input type="password" class="form-control w-100" id="password" name="password">
+                    </div>
+                    <button type="submit" class="btn btn-primary d-block mx-auto" id="SignupBtn" data-translate="SignUp">Sign up</button>
+                </form>
+            </div>
         </div>
-    </main>
-    <!-- End main -->
-
-    <!-- font awesome library -->
-    <script src="https://kit.fontawesome.com/4964aa4896.js" crossorigin="anonymous"></script>
-    <!-- Bootstrap link -->
+    </div>
+    <!-- font awesom  -->
+        <!-- font awesome library -->
+        <script src="https://kit.fontawesome.com/4964aa4896.js" crossorigin="anonymous"></script>
+    <!-- Send sign up page -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
+
     <script src="main.js"></script>
 </body>
 

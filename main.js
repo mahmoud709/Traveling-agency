@@ -1,33 +1,57 @@
-function loadLanguage(lang) {
-    return fetch(`${lang}.json`)
-        .then(response => response.json());
+const lang = {
+    en: {
+        Wejhatee:"Wejhatee",
+        Home:"Home",
+        TouristPalces:"TouristPalces",
+        Services:"Services",
+        Reviews:"Reviews",
+        login:"login",
+        register:"register",
+        Travel:"Travel is to live more than once",
+        SignUp: "Sign up",
+        Email: "Email",
+        password: "password",
+        Username: "Username",
+        Enterusername: "Enter username",
+        Enteremail: "Enter email",
+        Enterpassword: "Enter password",
+        
+    },
+    ar: {
+        Wejhatee:"وجهتي",
+        Home:"الرئيسيه",
+        TouristPalces:"الاماكن السياحيه",
+        Services:"الخدمات",
+        Reviews:"الاراء",
+        login:"تسجيل الدخول ",
+        register:"انشاء حساب",
+        Travel:"السفر هو العيش اكثر من مره",
+        SignUp: "تسجيل دخول",
+        Email: "البريد الاكتروني",
+        password:"الرقم السري",
+        Username: "اسم المستخدم",
+        Enterusername: "اسم المستخدم",
+        Enteremail:"البريد الاكتروني",
+        Enterpassword: "الرقم السري ",
+    },
 }
-
-function translateElements(translations) {
-    const elements = document.querySelectorAll('[data-translate]');
-    elements.forEach(element => {
-        const key = element.getAttribute('data-translate');
-        const translation = translations[key];
-        if (translation) {
-            element.textContent = translation;
-        }
+const languageSelector = document.querySelector("select");
+languageSelector.addEventListener("change",(event)=>{
+    setLanguage(event.target.value);
+} );
+const setLanguage = (language) =>{
+    const element = document.querySelectorAll("[data-translate]");
+    element.forEach((element) =>{
+        const langkey = element.getAttribute("data-translate");
+        element.textContent = lang[language][langkey];
     });
-}
+    document.dir = language ==="ar" ?   "rtl" : "ltr";
+};
 
-function detectLanguage() {
-    const languageSelector = document.getElementById('language-selector');
-    return languageSelector.value;
-}
+const signinform = document.getElementById('signinform');
+let login=document.getElementById('login');
+login.addEventListener('click', () => {
+    signinform.classList.toggle('appearform')
+})
 
-const languageSelector = document.getElementById('language-selector');
-languageSelector.addEventListener('change', () => {
-    const lang = detectLanguage();
-    loadLanguage(lang)
-        .then(translation => translateElements(translation))
-        .catch(error => console.error(error));
-});
-
-loadLanguage('en')
-    .then(translation => translateElements(translation))
-    .catch(error => console.error(error));
 

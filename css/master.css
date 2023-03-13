@@ -24,6 +24,7 @@ body {
 }
 .navbar-collapse{
     flex-grow: 0 !important;
+    margin-right: 60px;
 }
 .form-select{
     width: 120px !important;
@@ -46,4 +47,30 @@ main{
 }
 main .textinfo h2{
     letter-spacing: 1.2px;
+}
+/* Sign-in Page */
+.form-control:focus{
+    box-shadow: none !important;;
+}
+.navbar{
+    background-color: var(--maincolor);
+}
+nav{
+    position: relative;
+}
+.signinitem .signinform{
+    position: absolute;
+    top:100%;
+    right: 12%;
+}
+#SigninBtn{
+    margin-right: 55px;
+}
+.appearform{
+    display: none;
+}
+@media (max-width: 768px) {
+    .signinitem .signinform{
+        left: 0%;
+    }
 }
