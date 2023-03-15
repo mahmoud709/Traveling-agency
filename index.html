@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html dir="ltr">
+<html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,60 +39,62 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active text-white fs-4" data-translate="TouristPalces" aria-current="page"
-                            href="#">TouristPalces</a>
+                            href="#TouristPalces">TouristPalces</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active text-white fs-4" data-translate="Services" aria-current="page"
-                            href="#">Services</a>
+                            href="#services">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active text-white fs-4" data-translate="Reviews" aria-current="page"
-                            href="#">Reviews</a>
+                            href="#Reviews">Reviews</a>
                     </li>
                 </ul>
                 <select class="form-select mx-lg-3" id="language-selector">
-                        <option value="en">English</option>
-                        <option value="ar">العربيه</option>
-                    </select>
+                    <option value="en">English</option>
+                    <option value="ar">العربيه</option>
+                </select>
                 <div class="register d-flex mt-2">
                     <div class="userIcon">
                         <i class="fa-solid fa-user text-white fs-3"></i>
                     </div>
                     <div class="pages d-flex justify-content-start align-items-center">
-                            <div class="signinitem">
-                                <a href="#">
-                                    <p class="text-white px-1 mx-lg-1" data-translate="login" id="login">login </p>
-                                </a>
-                                <div class="signinform mt-2 appearform" id="signinform">
-                                    <form action="">
-                                        <div class="mb-3 row">
-                                            <div class="col-sm-10">
-                                                <input type="email" class="form-control" id="Emailpassword" placeholder="Email" required>
-                                            </div>
+                        <div class="signinitem">
+                            <a href="#">
+                                <p class="text-white px-1 mx-lg-1" data-translate="login" id="login">login </p>
+                            </a>
+                            <div class="signinform mt-2 appearform leftdir" id="signinform">
+                                <form action="">
+                                    <div class="mb-3 row">
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" id="Emailpassword"
+                                                placeholder="Email" required>
                                         </div>
-                                        <div class="mb-3 row">
-                                            <div class="col-sm-10">
-                                                <input type="password" class="form-control" id="inputPassword" placeholder="Password" required min="6">
-                                            </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <div class="col-sm-10">
+                                            <input type="password" class="form-control" id="inputPassword"
+                                                placeholder="Password" required min="6">
                                         </div>
-                                        <div class="col-auto text-center">
-                                            <button type="submit" class="btn btn-primary mb-3" id="SigninBtn" data-translate="login">Sign in</button>
-                                        </div>
-                                    </form>
-                                </div>
+                                    </div>
+                                    <div class="col-auto text-center">
+                                        <button type="submit" class="btn btn-primary mb-3" id="SigninBtn"
+                                            data-translate="login">Sign in</button>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="signupitem">
-                                <a href="signup.html">
-                                    <p class="text-white px-1 mx-lg-1" data-translate="register">register</p>
-                                </a>
-                            </div>
+                        </div>
+                        <div class="signupitem">
+                            <a href="signup.html">
+                                <p class="text-white px-1 mx-lg-1" data-translate="register">register</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
     <!-- end header -->
-
     <!-- start main -->
     <main class="hero d-flex justify-content-center align-items-center">
         <div class="textinfo text-center">
@@ -100,7 +103,214 @@
         </div>
     </main>
     <!-- End main -->
+    <!-- strat Tourist Palces -->
+    <section id="TouristPalces" class="container my-5">
+        <div class="textinformation text-center">
+            <h2 class="mx-auto" data-translate="TouristPalces">Best Tourist Palces</h2>
+        </div>
+        <div class="cards row">
+            <div class="card col-12 col-sm-6 col-md-4 my-4">
+                <img src="images/img1.AVIF" class="card-img-top" alt="img1">
+                <div class="card-body">
+                    <h3 class="card-title" data-translate="loc1">sahar castle</h3>
+                    <p class="card-text fs-5" data-translate="title1">This castle is one of the oldest tourist places in Sohar, and one of the most important castles and forts due to its privileged location, and the important role it played over the past 
+                        centuries</p>
+                </div>
+            </div>
+            <div class="cards col-12 col-sm-6 col-md-4 my-4">
+                <div class="card">
+                    <img src="images/img2.AVIF" class="card-img-top" alt="img2">
+                    <div class="card-body">
+                        <h3 class="card-title" data-translate="loc2">Sultan Qaboos Mosque</h3>
+                        <p class="card-text fs-5" data-translate="title2">One of the most beautiful tourist places in the state of Sohar, is a huge, newly built royal mosque. If you are visiting Sohar,
+                            this landmark is one of the most important architectural features that you can see
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards col-12 col-sm-6 col-md-4 my-4">
+                <div class="card" >
+                    <img src="images/img3.AVIF" class="card-img-top" alt="img3">
+                    <div class="card-body">
+                        <h3 class="card-title" data-translate="loc3">Sohar Old Market</h3>
+                        <p class="card-text fs-5" data-translate="title3">Sohar Old Market is the most famous tourist attraction in Sohar, and it is an old market with a modern building in the historical style of the country,
+                            which is inspired by the architectural forms</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards col-12 col-sm-6 col-md-4 my-4">
+                <div class="card">
+                    <img src="images/img4.AVIF" class="card-img-top" alt="img4">
+                    <div class="card-body">
+                        <h3 class="card-title" data-translate="loc4">Sohar Corniche</h3>
+                        <p class="card-text fs-5" data-translate="title4">It is one of the most beautiful tourist attractions in Sohar, one of the most crowded places, whether with residents or visitors to the city, so you can enjoy the wonderful waterfront
+                            with breezes of clean, fresh air </p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards col-12 col-sm-6 col-md-4 my-4">
+                <div class="card">
+                    <img src="images/img5.AVIF" class="card-img-top" alt="img5">
+                    <div class="card-body">
+                        <h3 class="card-title" data-translate="loc5">Silver Jubilee Park</h3>
+                        <p class="card-text fs-5" data-translate="title5">One of the most wonderful tourist attractions in Sohar, and it was established on the occasion of the silver jubilee of the renaissance that the Sultanate is witnessing,
+                            which is characterized by a wonderful design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards col-12 col-sm-6 col-md-4 my-4">
+                <div class="card">
+                    <img src="images/img6.AVIF" class="card-img-top" alt="img6">
+                    <div class="card-body">
+                        <h3 class="card-title" data-translate="loc6">Sohar Gardens</h3>
+                        <p class="card-text fs-5" data-translate="title6">During your search for the best tourist places in Sohar, you will of course find that the Sohar Gardens sit on its throne
+                            , as everyone loves wandering among the green spaces</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Tourist Palces -->
 
+    <!--Start service section -->
+    <section class="service container my-5 mx-auto" id="services">
+        <div class="container-fluid">
+            <div class="textinformation text-center">
+                <h2 class="mx-auto" data-translate="servs">Services</h2>
+            </div>
+        </div>
+        <div id="myCarousel" class="carousel slide py-5" data-bs-ride="carousel" data-bs-interval="1500">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-12 col-md-4 serv-card">
+                            <div class="card m-3 p-3 text-center">
+                                <img src="images/dish.AVIF" alt="dish" width="80px">
+                                <div class="card-body">
+                                    <p class="card-text fs-4" data-translate="serv1">Resturants</p>
+                                </div>
+                                <div class="address">
+                                    <p class="phoneNum">phone :+968 4532 0028</p>
+                                    <span class="mail">maii :lorem45@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 serv-card">
+                            <div class="card m-3 p-3 text-center">
+                                <img src="images/guard.AVIF" alt="guard" width="80px">
+                                <div class="card-body">
+                                    <p class="card-text fs-4 " data-translate="serv2">police stations</p>
+                                </div>
+                                <div class="address">
+                                    <p class="phoneNum">phone :+968 1458 4523</p>
+                                    <span class="mail">maii :lorem45@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 serv-card">
+                            <div class="card m-3 p-3 text-center">
+                                <img src="images/shopping-cart.AVIF" alt="shopping-cart" width="80px">
+                                <div class="card-body">
+                                    <p class="card-text fs-4" data-translate="serv3">commercial centers</p>
+                                </div>
+                                <div class="address">
+                                    <p class="phoneNum">phone :+968 7569 1236</p>
+                                    <span class="mail">maii :lorem45@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-12 col-md-4 serv-card">
+                            <div class="card m-3 p-3 text-center">
+                                <img src="images/pharmacy.AVIF" alt="pharmacy" width="80px">
+                                <div class="card-body">
+                                    <p class="card-text fs-4" data-translate="serv4">Hospital</p>
+                                </div>
+                                <div class="address">
+                                    <p class="phoneNum">phone :+968 6354 7896</p>
+                                    <span class="mail">maii :lorem95@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 serv-card">
+                            <div class="card m-3 p-3 text-center">
+                                <img src="images/hotel.AVIF" alt="hotel" width="80px">
+                                <div class="card-body">
+                                    <p class="card-text fs-4" data-translate="serv5">Hotels</p>
+                                </div>
+                                <div class="address">
+                                    <p class="phoneNum">phone :+968 9635 7456</p>
+                                    <span class="mail">maii :lorem41@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 serv-card">
+                            <div class="card m-3 p-3 text-center">
+                                <img src="images/grocery-cart.AVIF" alt="grocery-cart" width="80px">
+                                <div class="card-body">
+                                    <p class="card-text fs-4 " data-translate="serv6">Supermarkets</p>
+                                </div>
+                                <div class="address">
+                                    <p class="phoneNum">phone :+968 9687 1234</p>
+                                    <span class="mail">maii :lorem75@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End service section -->
+    <!-- Start Review Section -->
+    <section id="Reviews" class="container">
+        <div class="container-fluid">
+            <div class="textinformation text-center">
+                <h2 class="mx-auto" data-translate="Reviews">Reviews</h2>
+            </div>
+        </div>
+        <div class="cards row">
+            <div class="card rv-item col-12 col-sm-6 col-md-4 my-2 mx-auto p-3">
+                    <div class="personinfo">
+                            <div class="user text-center">
+                                <img src="images/pic-1.AVIF" alt="pic-2">
+                                <div class="user-info">
+                                    <h3>john deo</h3>
+                                </div>
+                            </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Corporis dolor dicta cum. Eos beatae eligendi, magni numquam nemo sed ut corrupti, ipsam iure nisi unde et assumenda perspiciatis voluptatibus nihil.</p>
+            </div>
+            <div class="card rv-item col-12 col-sm-6 col-md-4 my-2 mx-auto p-3">
+                <div class="personinfo ">
+                        <div class="user text-center">
+                            <img src="images/pic-2.AVIF" alt="pic-2">
+                            <div class="user-info">
+                                <h3>john deo</h3>
+                            </div>
+                        </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Corporis dolor dicta cum. Eos beatae eligendi, magni numquam nemo sed ut corrupti, ipsam iure nisi unde et assumenda perspiciatis voluptatibus nihil.</p>
+        </div>
+        <div class="card rv-item col-12 col-sm-6 col-md-4 my-2 mx-auto p-3">
+            <div class="personinfo ">
+                    <div class="user text-center">
+                        <img src="images/pic-3.AVIF" alt="pic-2">
+                        <div class="user-info">
+                            <h3>john deo</h3>
+                        </div>
+                    </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Corporis dolor dicta cum. Eos beatae eligendi, magni numquam nemo sed ut corrupti, ipsam iure nisi unde et assumenda perspiciatis voluptatibus nihil.</p>
+    </div>
+        </div>
+    </section>
     <!-- font awesome library -->
     <script src="https://kit.fontawesome.com/4964aa4896.js" crossorigin="anonymous"></script>
     <!-- Bootstrap link -->

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signin</title>
+    <title>Sign up</title>
     <!-- css file -->
     <link rel="stylesheet" href="css/master.css">
     <!-- Render elements normaly -->
@@ -35,7 +35,7 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active text-white fs-4" data-translate="Home" aria-current="page"
-                            href="#">Home</a>
+                            href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active text-white fs-4" data-translate="TouristPalces" aria-current="page"
@@ -99,15 +99,15 @@
                 <form>
                     <div class="mb-3">
                         <label for="username" class="form-label" data-translate="Username" data-translate="Username">Username:</label>
-                        <input type="text" class="form-control w-100" id="username" name="username" >
+                        <input type="text" class="form-control w-100" id="username" name="username"  >
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label" data-translate="Email">Email:</label>
-                        <input type="email" class="form-control w-100" id="email" name="email">
+                        <input type="email" class="form-control w-100" id="email" name="email" required>
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label" data-translate="password">Password:</label>
-                        <input type="password" class="form-control w-100" id="password" name="password">
+                        <input type="password" class="form-control w-100" id="password" name="password" required>
                     </div>
                     <button type="submit" class="btn btn-primary d-block mx-auto" id="SignupBtn" data-translate="SignUp">Sign up</button>
                 </form>
