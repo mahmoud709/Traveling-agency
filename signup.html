@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html dir="ltr">
-
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up</title>
-    <!-- css file -->
-    <link rel="stylesheet" href="css/master.css">
-    <!-- Render elements normaly -->
-    <link rel="stylesheet" href="css/Normarize.css">
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400;1,500&display=swap"
-        rel="stylesheet">
-    <!-- Bootstrap link  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Duqm</title>
+        <!-- css file -->
+        <link rel="stylesheet" href="css/master.css">
+        <!-- Render elements normaly -->
+        <link rel="stylesheet" href="css/Normarize.css">
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400;1,500&display=swap"
+            rel="stylesheet">
+        <!-- Bootstrap link  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
-
 <body>
     <!-- strat header -->
     <nav class="navbar navbar-expand-lg fixed-top">
@@ -59,28 +57,6 @@
                         <i class="fa-solid fa-user text-white fs-3"></i>
                     </div>
                     <div class="pages d-flex justify-content-start align-items-center">
-                            <div class="signinitem">
-                                <a href="#">
-                                    <p class="text-white px-1 mx-lg-1" data-translate="login" id="login">login </p>
-                                </a>
-                                <div class="signinform mt-2 appearform" id="signinform">
-                                    <form action="">
-                                        <div class="mb-3 row">
-                                            <div class="col-sm-10">
-                                                <input type="email" class="form-control" id="Emailpassword" placeholder="Email" required>
-                                            </div>
-                                        </div>
-                                        <div class="mb-3 row">
-                                            <div class="col-sm-10">
-                                                <input type="password" class="form-control" id="inputPassword" placeholder="Password" required min="6">
-                                            </div>
-                                        </div>
-                                        <div class="col-auto text-center">
-                                            <button type="submit" class="btn btn-primary mb-3" id="SigninBtn">Sign in</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
                             <div class="signupitem">
                                 <a href="signup.html">
                                     <p class="text-white px-1 mx-lg-1" data-translate="register">register</p>
@@ -92,14 +68,22 @@
         </div>
     </nav>
     <!-- start signup page -->
-    <div class="signupform mt-4">
+    <div class="signupform mt-4 ">
         <div class="container-fluid d-flex align-items-center justify-content-center" style="min-height: 100vh">
-            <div class="container col-md-6">
+            <div class="container col-md-6 ">
                 <h2 class="text-center mb-4" data-translate="SignUp">Sign Up</h2>
                 <form>
                     <div class="mb-3">
                         <label for="username" class="form-label" data-translate="Username" data-translate="Username">Username:</label>
-                        <input type="text" class="form-control w-100" id="username" name="username"  >
+                        <input type="text" class="form-control w-100" id="username" name="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phonenum" class="form-label" data-translate="Username" data-translate="phone">phone:</label>
+                        <input type="number" class="form-control w-100" id="phonenum" name="phone"  >
+                    </div>
+                    <div class="mb-3">
+                        <label for="country" class="form-label" data-translate="Email">country:</label>
+                        <input type="text" class="form-control w-100" id="country" name="country">
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label" data-translate="Email">Email:</label>
@@ -121,7 +105,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
-
     <script src="main.js"></script>
 </body>
 

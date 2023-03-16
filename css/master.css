@@ -59,13 +59,13 @@ nav{
     position: relative;
 }
 .leftdir{
-    position: absolute;
-    top:100%;
-    right: 12%;
+    position: absolute ;
+    top:100% ;
+    right: 12% ;
 }
 .rightdir{
     position: absolute ;
-    top:100% ;
+    top:100%;
     left: 10% ;
 }
 #SigninBtn{
@@ -79,11 +79,24 @@ nav{
     width: fit-content;
     border: 2px solid var(--maincolor);
 }
+.weathersahar a {
+    cursor: pointer;
+    padding: 10px;
+    background-color: var(--maincolor) !important;
+    color: var(--secondarycolor) !important;
+}
 .cards .card{
     height: 600px !important;
 }
 .serv-card .card img {
     margin: 0 auto !important;
+}
+.card_description{
+    cursor: pointer;
+}
+.cards .item{
+    width: 400px !important;
+    height: 600px !important;
 }
 .cards .rv-item{
     width: 420px !important;
@@ -95,6 +108,12 @@ nav{
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+}
+.salalahpage{
+    margin-top: 100px;
+}
+.salalahpage .images .card{
+    height: 250px !important;
 }
 @media (max-width: 768px) {
     .signinitem .signinform{
